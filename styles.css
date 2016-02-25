@@ -215,3 +215,14 @@ input{
 	margin-top: -1.67em;
 
 }
+
+/*
+Create a layout displaying a navigation menu with at least 5 options. 
+Provide a way to:
+display the menu on the left
+display the menu on the right
+display the menu on top
+hide/show submenus (drop-down)
+allow the user to switch between all the options
+*/
+

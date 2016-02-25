@@ -1,0 +1,104 @@
+
+/*general*/
+nav{
+	position: relative;
+	background-color: #374c5d !important;
+	margin-top: 50px;
+
+}
+nav a{
+	text-decoration: none;
+	color: #f0f0f0;
+	padding: 10px 15px;
+	font-size: 1.125rem;
+	display: block;
+}
+nav::before,nav::after{
+	clear: both;
+}
+nav ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+nav ul ul{
+		background-color: #374c5d !important;
+
+}
+
+nav  ul  li  a:hover{
+	background-color: #1fc08e;
+}
+
+
+/*Left and right */
+input[type="radio"][value="1"]:checked ~ nav, input[type="radio"][value="2"]:checked ~ nav{ 
+	width: 20%;
+} 
+
+input[type="radio"][value="1"]:checked ~ nav ul, input[type="radio"][value="2"]:checked ~ nav ul{ 
+	padding-left: 0;
+} 
+input[type="radio"][value="1"]:checked ~ nav li, input[type="radio"][value="2"]:checked ~ nav li{ 
+	border-top: 1px solid #24323d;
+	border-bottom: 1px solid #3f566a;
+} 
+/*hide sub menu for left and right
+*/
+input[type="radio"][value="1"]:checked ~ nav ul ul, input[type="radio"][value="2"]:checked ~ nav ul ul{ 
+	display: none;
+} 
+
+/*First Option : right*/
+input[type="radio"][value="1"]:checked ~ nav{ 
+	position: fixed;
+	top: 0;
+	right: 0;
+/*	float: right;
+*/} 
+
+input[type="radio"][value="1"]:checked ~ nav ul li{ 
+} 
+
+/*Second Option : Left*/
+
+input[type="radio"][value="2"]:checked ~ nav{ 
+	position: fixed;
+	top: 0;
+	left: 0;
+} 
+/*Thirth option TOP
+*/
+input[type="radio"][value="3"]:checked ~ nav{ 
+	height: 60px;
+} 
+input[type="radio"][value="3"]:checked ~ nav ul li{ 
+	float: left;
+} 
+input[type="radio"][value="3"]:checked ~ nav ul li a{ 
+	line-height: 40px;
+} 
+
+input[type="radio"][value="3"]:checked ~ nav > ul > li{ 
+	border-right: 1px solid #24323d;
+	border-left: 1px solid #3f566a;
+} 
+
+input[type="radio"][value="3"]:checked ~ nav > ul > li > ul > li{ 
+	border-top: 1px solid #24323d;
+	border-bottom: 1px solid #3f566a;
+} 
+
+
+/*sub menu */
+input[type="radio"][value="3"]:checked ~ nav ul ul{ 
+	display: none;
+} 
+
+input[type="radio"][value="3"]:checked ~ nav ul ul li{ 
+	float: none;
+} 
+
+input[type="radio"][value="3"]:checked ~ nav ul li:hover > ul{
+	display: inherit;
+}
