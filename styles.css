@@ -17,6 +17,14 @@
 	Define a special color for links that have an image beside them, 
 	keep the default style otherwise.  
 */
-img + a {
+.ex3 img + a {
    color: red;
+}
+
+/*Create a page with multiple backgrounds*/
+.ex4{
+
+	background-image: url(img/android.jpg), url(img/ignasi_pattern_s.png);
+	background-position: center bottom, top left;
+	background-repeat: no-repeat, repeat;
 }
