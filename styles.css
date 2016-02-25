@@ -55,3 +55,38 @@
 		transform:  rotate(0deg); 
 	}
 }
+
+/*Show visual feedback when a user inputs invalid information in a form.
+*/
+form{
+	width: 500px;
+	margin: 0 auto;
+}
+form label{
+	display: inline-block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.form-group{
+	margin-bottom: 10px;
+}
+
+input{
+	display: block;
+	width: 100%;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+}
+
+.form-control:invalid{ 
+    background-color: hsla(0, 90%, 70%, 1);
+}
+
+.form-control:valid{
+	background-color: hsla(100, 90%, 70%, 1);
+}
+.validation{
+	display: none;
+	color: red;
+}

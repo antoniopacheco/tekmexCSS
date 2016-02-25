@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+<!-- Show visual feedback when a user inputs invalid information in a form.
+ -->
+ <form>
+ 	<fieldset>
+ 		<legend>Personal Data</legend>
+ 		<div class="form-group">
+	 		<label for="name">
+	 			Name:
+	 		</label>
+	 		<input class="form-control" type="text" id="name" required>
+	 		<span class="validation">Need to be a valid string</span>
+	 	</div>
+
+	 	<div class="form-group">
+	 		<label for="email">
+	 			Email:
+	 		</label>
+	 		<input class="form-control" type="email" id="email" required>
+	 		<span class="validation" for="email">Need to be a valid email</span>
+
+	 	</div>
+
+		<div class="form-group">
+	 		<label for="date">
+	 			BirthDay:
+	 		</label>
+	 		<input class="form-control" type="date" id="date" required>
+	 		<span class="validation">Need to be a valid Date</span>
+
+	 	</div> 	
+ 	</fieldset>
+
+ 	<input type="submit" value="Save">
+ </form>
+</body>
+</html>
