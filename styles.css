@@ -12,3 +12,11 @@
 	top:50%;
 	margin:-100px 0 0 -150px;
 }
+
+/*
+	Define a special color for links that have an image beside them, 
+	keep the default style otherwise.  
+*/
+img + a {
+   color: red;
+}
