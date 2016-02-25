@@ -191,3 +191,20 @@ input{
 .ex8 p:first-letter{
 	font-size: 3em;
 }
+
+/*<!-- Have each letter of a word pop up when hovered over.
+*/
+
+.ex10 :hover{
+	font-size: 3em;
+}
+
+.ex10 .popup{
+	font-size: 30px;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.ex10 .popup:hover{
+	opacity: 1;
+}
