@@ -184,3 +184,10 @@ input{
 	color: red;
 	background-color: blue;
 }
+
+/*Make the first letter of every paragraph 3x bigger.
+*/
+
+.ex8 p:first-letter{
+	font-size: 3em;
+}
