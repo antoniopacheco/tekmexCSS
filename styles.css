@@ -172,9 +172,15 @@ input{
     background-color: #CCC;
 }
 
-footer{
+.ex6 footer{
 	background-color: #CCC;
 	clear: both;
 	width: 100%;
 	height: 40px;
+}
+
+/*Change the style of selected text*/
+.ex7 ::selection{
+	color: red;
+	background-color: blue;
 }
