@@ -208,3 +208,10 @@ input{
 .ex10 .popup:hover{
 	opacity: 1;
 }
+
+/*<!-- Remove the spacing between header elements and a paragraph
+*/
+.ex11 h1 + p, h2 + p, h3 +p, h4 +p, h5 +p, h6 +p{
+	margin-top: -1.67em;
+
+}
