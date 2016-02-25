@@ -90,3 +90,91 @@ input{
 	display: none;
 	color: red;
 }
+
+.ex6 *{
+	margin: 0px;
+	box-sizing: border-box;
+
+}
+.ex6 header{
+	width: 100%;
+	height: 40px;
+	background-color: #CCC;
+}
+
+.ex6 .wrapper{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.ex6 .newsSection, .ex6 .newsSection:before{
+	width: 10%;
+}
+.ex6 .newsSection{
+	background-color: #CCC;
+	float: left;
+	padding: 5px;
+}
+
+.ex6 .newsection:before{
+	content: '';
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    z-index: -1;
+    left: 0;
+    background-color: #CCC;
+}
+
+
+.ex6 .maincontent,.ex6 .maincontent:before{
+	width: calc(50% - 10px);
+}
+.ex6 .maincontent{
+	background-color: #CCC;
+	float: left;
+	padding: 5px;
+	margin-left: 10px;
+}
+
+.ex6 .maincontent:before{
+	content: '';
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    z-index: -1;
+    left: calc(10% + 10px);
+    background-color: #CCC;
+}
+
+.ex6 .otherLinks, .ex6 .otherLinks:before{
+	width: calc(40% - 10px);
+}	
+
+.ex6 .otherLinks{
+	background-color: #CCC;
+	padding: 5px;
+	float: left;
+	margin-left: 10px;
+}
+
+.ex6 .otherLinks:before{
+	content: '';
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    z-index: -1;
+    left: calc(60% + 10px);
+    background-color: #CCC;
+}
+
+footer{
+	background-color: #CCC;
+	clear: both;
+	width: 100%;
+	height: 40px;
+}
